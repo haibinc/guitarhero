@@ -1,0 +1,6 @@
+../Core/Src/Audio.c:41:6:Audio_Init	32	static
+../Core/Src/Audio.c:56:14:GoertzelPower	48	static
+../Core/Src/Audio.c:73:6:Audio_Update	144	static
+../Core/Src/Audio.c:178:9:Audio_GetLevel	4	static
+../Core/Src/Audio.c:183:9:Audio_GetBandLevel	16	static
+../Core/Src/Audio.c:189:9:Audio_PeakDetected	16	static

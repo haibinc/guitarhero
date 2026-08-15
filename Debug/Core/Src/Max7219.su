@@ -1,0 +1,8 @@
+../Core/Src/Max7219.c:3:13:CS_Low	8	static
+../Core/Src/Max7219.c:4:13:CS_High	8	static
+../Core/Src/Max7219.c:6:6:MAX7219_WriteAll	24	static
+../Core/Src/Max7219.c:17:6:MAX7219_Init	16	static
+../Core/Src/Max7219.c:30:6:MAX7219_SetIntensity	16	static
+../Core/Src/Max7219.c:35:6:MAX7219_Clear	24	static
+../Core/Src/Max7219.c:44:6:MAX7219_SetColumn	32	static
+../Core/Src/Max7219.c:55:6:MAX7219_DrawFrame	24	static

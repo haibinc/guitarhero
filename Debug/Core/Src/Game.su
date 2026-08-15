@@ -1,0 +1,12 @@
+../Core/Src/Game.c:37:13:PlotCell	24	static
+../Core/Src/Game.c:93:13:SpawnNote	24	static
+../Core/Src/Game.c:115:13:AdvanceNotes	16	static
+../Core/Src/Game.c:133:16:TryHit	24	static
+../Core/Src/Game.c:157:13:Render	72	static
+../Core/Src/Game.c:231:6:Game_Init	24	static
+../Core/Src/Game.c:259:6:Game_Update	32	static
+../Core/Src/Game.c:312:10:Game_GetScore	4	static
+../Core/Src/Game.c:313:10:Game_GetStreak	4	static
+../Core/Src/Game.c:314:10:Game_GetHits	4	static
+../Core/Src/Game.c:315:10:Game_GetMisses	4	static
+../Core/Src/Game.c:317:9:Game_IsPerfectFlashActive	8	static

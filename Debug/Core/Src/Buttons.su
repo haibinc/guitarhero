@@ -1,0 +1,4 @@
+../Core/Src/Buttons.c:20:6:Buttons_Init	32	static
+../Core/Src/Buttons.c:42:6:Buttons_Update	24	static
+../Core/Src/Buttons.c:72:9:Buttons_IsDown	16	static
+../Core/Src/Buttons.c:78:9:Buttons_WasJustPressed	16	static
