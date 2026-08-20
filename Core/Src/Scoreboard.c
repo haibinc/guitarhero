@@ -7,8 +7,22 @@ void Scoreboard_Init(I2C_HandleTypeDef *hi2c)
     SSD1306_Init(hi2c);
 }
 
+// The OLED redraw is a fully-blocking I2C transfer of the whole 128x64
+// framebuffer (over 1000 bytes). Doing that every single main-loop
+// iteration steals CPU time from button polling for no visible benefit -
+// human eyes can't tell 10 updates/sec from 1000 updates/sec, but your
+// fingers can absolutely feel the extra latency. Throttling this to a
+// fixed rate frees up the rest of the loop (buttons, note scrolling) to
+// run essentially as fast as the CPU allows.
+#define SCOREBOARD_UPDATE_MS  100
+
 void Scoreboard_Update(I2C_HandleTypeDef *hi2c)
 {
+    static uint32_t lastUpdateTick = 0;
+    uint32_t now = HAL_GetTick();
+    if ((now - lastUpdateTick) < SCOREBOARD_UPDATE_MS) return;
+    lastUpdateTick = now;
+
     SSD1306_Clear();
 
     // Three labeled stats, one per line. DrawText returns the x position

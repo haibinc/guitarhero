@@ -7,16 +7,16 @@
 // ---- Tune these to match your song ----
 
 // Beats per minute of whatever you're playing alongside the game.
-#define GAME_BPM              25
+#define GAME_BPM              20
 
 // How many beats a note spends travelling before it reaches the hit zone.
 // Bigger = notes visible longer = easier. This is what makes notes ARRIVE
 // on the beat rather than spawn on it.
-#define NOTE_TRAVEL_BEATS     4
+#define NOTE_TRAVEL_BEATS     3
 
 // How close to the hit column a note must be for a press to count.
 // 0 = perfect only, 1 = one column of slack either side.
-#define HIT_TOLERANCE         4
+#define HIT_TOLERANCE         2
 
 // Set to 1 if notes should count DOWN from device 0 to the last device
 // instead of counting UP from device 0 to the last device. Flip this if

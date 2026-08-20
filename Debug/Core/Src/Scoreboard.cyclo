@@ -1,2 +1,2 @@
 ../Core/Src/Scoreboard.c:5:6:Scoreboard_Init	1
-../Core/Src/Scoreboard.c:10:6:Scoreboard_Update	3
+../Core/Src/Scoreboard.c:19:6:Scoreboard_Update	4

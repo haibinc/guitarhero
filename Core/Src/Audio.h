@@ -38,4 +38,11 @@ uint8_t Audio_PeakDetected(uint8_t band);
 // Minimum time between two peaks on the SAME band.
 #define PEAK_REFRACTORY_MS     400
 
+// ---- Debug-only getters (see .c for details) ----
+// Raw (pre-gating) Goertzel power for a band from the most recent update.
+uint32_t Audio_GetBandRawPower(uint8_t band);
+// Calibrated resting/idle power baseline for a band (0 until calibration
+// finishes, ~500ms after boot).
+uint32_t Audio_GetBandNoiseFloor(uint8_t band);
+
 #endif
